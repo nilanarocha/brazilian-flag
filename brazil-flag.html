@@ -1,0 +1,26 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+  var canva = document.querySelector("canvas");
+
+  var paintbrush = canva.getContext("2d");
+
+  paintbrush.fillStyle = "green";
+  paintbrush.fillRect(0, 0, 600, 400);
+
+  // triangle:
+
+  paintbrush.fillStyle = "yellow";
+  paintbrush.beginPath();
+  paintbrush.moveTo(300, 20); //(x,y)
+  paintbrush.lineTo(300, 380); //(x,y)
+  paintbrush.lineTo(580, 200); //(x,y)
+  paintbrush.fill();
+
+  paintbrush.fillStyle = "yellow";
+  paintbrush.beginPath();
+  paintbrush.moveTo(300, 20); //(x,y)
+  paintbrush.lineTo(300, 380); //(x,y)
+  paintbrush.lineTo(20, 200); //(x,y)
+  paintbrush.fill();
+</script>
