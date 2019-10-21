@@ -5,11 +5,14 @@
 
   var paintbrush = canva.getContext("2d");
 
+  // green square background
   paintbrush.fillStyle = "green";
   paintbrush.fillRect(0, 0, 600, 400);
 
-  // triangle:
+  // yellow diamond
+  // 2 triangles forming a diamond
 
+  // right triangle
   paintbrush.fillStyle = "yellow";
   paintbrush.beginPath();
   paintbrush.moveTo(300, 20); //(x,y)
@@ -17,10 +20,18 @@
   paintbrush.lineTo(580, 200); //(x,y)
   paintbrush.fill();
 
+  // left triangle
   paintbrush.fillStyle = "yellow";
   paintbrush.beginPath();
   paintbrush.moveTo(300, 20); //(x,y)
   paintbrush.lineTo(300, 380); //(x,y)
   paintbrush.lineTo(20, 200); //(x,y)
+  paintbrush.fill();
+
+  //circle
+
+  paintbrush.fillStyle = "blue";
+  paintbrush.beginPath();
+  paintbrush.arc(300, 200, 120, 0, 2 * 3.14); //(x, y, diameter, initial angle, final angle in radians)
   paintbrush.fill();
 </script>
